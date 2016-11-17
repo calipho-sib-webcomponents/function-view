@@ -1,31 +1,31 @@
 {
-  "name": "function-view",
-  "description": "View listing protein function annotations.",
-  "authors": ["marcin.domagalski@sib.swiss"],
-  "keywords": [
+    "name": "function-view",
+    "description": "View listing protein function annotations.",
+    "authors": ["marcin.domagalski@sib.swiss"],
+    "keywords": [
     "web-components",
     "nextprot-webcomponents",
     "polymer"
   ],
-  "main": "function-view.html",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/calipho-sib/nextprot-webocomponents.git#function-view"
-  },
-  "homepage": "https://github.com/calipho-sib/nextprot-webcomponents/tree/function-view",
-  "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
-    "protein-overview": "git://github.com/calipho-sib/nextprot-webcomponents.git#protein-overview",
-    "generic-annotation-section": "git://github.com/calipho-sib/nextprot-webcomponents.git#generic-annotation-section",
-    "keywords-section": "git://github.com/calipho-sib/nextprot-webcomponents.git#keywords-section",
-    "xrefs-section": "git://github.com/calipho-sib/nextprot-webcomponents.git#xrefs-section",
-    "shared-styles": "git://github.com/calipho-sib/nextprot-webcomponents.git#shared-styles",
-    "bootstrap": "^3.3.7"
-  },
-  "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-    "web-component-tester": "^4.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-  }
+    "main": "function-view.html",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/calipho-sib-webcomponents/function-view.git"
+    },
+    "homepage": "https://github.com/calipho-sib-webcomponents/function-view",
+    "dependencies": {
+        "polymer": "Polymer/polymer#^1.4.0",
+        "protein-overview": "https://github.com/calipho-sib-webcomponents/protein-overview.git#develop",
+        "generic-annotation-section": "https://github.com/calipho-sib-webcomponents/generic-annotation-section.git#develop",
+        "keywords-section": "https://github.com/calipho-sib-webcomponents/keywords-section.git#develop",
+        "xrefs-section": "https://github.com/calipho-sib-webcomponents/xrefs-section.git#develop",
+        "shared-styles": "https://github.com/calipho-sib-webcomponents/shared-styles.git#develop",
+        "bootstrap": "^3.3.7"
+    },
+    "devDependencies": {
+        "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+        "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+        "web-component-tester": "^4.0.0",
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+    }
 }
