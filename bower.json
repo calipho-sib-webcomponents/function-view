@@ -21,17 +21,12 @@
     "generic-annotation-section": "https://github.com/calipho-sib-webcomponents/generic-annotation-section.git#develop",
     "keywords-section": "https://github.com/calipho-sib-webcomponents/keywords-section.git#develop",
     "xrefs-section": "https://github.com/calipho-sib-webcomponents/xrefs-section.git#develop",
-    "shared-styles": "https://github.com/calipho-sib-webcomponents/shared-styles.git#develop",
-    "bootstrap": "^3.3.7"
+    "shared-styles": "https://github.com/calipho-sib-webcomponents/shared-styles.git#develop"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
     "web-component-tester": "^4.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-  },
-  "resolutions": {
-    "shared-styles": "develop",
-    "quality-label": "develop"
   }
 }

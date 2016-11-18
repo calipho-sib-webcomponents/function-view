@@ -20,10 +20,10 @@ View listing protein function annotations.
     </style>
     <div class="row">
       <div id="nxOverview" class="col-md-12">
-        <protein-overview></protein-overview>
+        <protein-overview nx-config="{{nxConfig}}"></protein-overview>
       </div>
     </div>
-    <div id="noDataWarning" class='alert alert-warning noData' hidden>There is no function information available in neXtProt for {{nxEntry}}.
+    <div id="noDataWarning" class='alert alert-warning noData' hidden>There is no function information available in neXtProt for {{nxConfig.entry}}.
       Suggestions for updates are welcome! Please <a href='mailto:support@nextprot.org'>contact us</a>.
     </div>
     <div class="row">
@@ -32,14 +32,14 @@ View listing protein function annotations.
                                     categories='["FUNCTION-INFO", "CATALYTIC-ACTIVITY", "COFACTOR",
                                     "ENZYME-REGULATION", "GO-MOLECULAR-FUNCTION", "GO-BIOLOGICAL-PROCESS",
                                     "PATHWAY", "ALLERGEN", "CAUTION", "MISCELLANEOUS"]'
-                                    count="{{annotationsCount}}" nx-entry="{{nxEntry}}">
+                                    count="{{annotationsCount}}" nx-config="{{nxConfig}}">
         </generic-annotation-section>
       </div>
     </div>
     <div class="row">
       <div id="nxKeywords" class="col-md-12">
         <keywords-section categories='["Biological process","Molecular function", "Technical term"]'
-                          exceptions='["KW-0002", "KW-0181", "KW-0903", "KW-0374", "KW-0582"]' count="{{keywordsCount}}">
+                          exceptions='["KW-0002", "KW-0181", "KW-0903", "KW-0374", "KW-0582"]' nx-config="{{nxConfig}}" count="{{keywordsCount}}">
         </keywords-section>
       </div>
     </div>
@@ -47,7 +47,7 @@ View listing protein function annotations.
       <div id="nxXrefs" class="col-md-12">
         <xrefs-section categories='["BRENDA", "CAZy", "KEGGPathway", "MEROPS", "PeroxiBase",
           "BioCyc", "Reactome","Pathway_Interaction_DB", "REBASE", "TCDB", "GeneWiki", "SABIO-RK",
-          "GenomeRNAi", "GuidetoPHARMACOLOGY", "PRO","MoonProt","ESTHER"]' count="{{xrefsCount}}">
+          "GenomeRNAi", "GuidetoPHARMACOLOGY", "PRO","MoonProt","ESTHER"]' nx-config="{{nxConfig}}" count="{{xrefsCount}}">
         </xrefs-section>
       </div>
     </div>
@@ -56,8 +56,9 @@ View listing protein function annotations.
     Polymer({
       is: 'function-view',
       properties: {
-        nxEntry: {
-          type: String
+        nxConfig: {
+          type: Object,
+          value: {}
         },
         goldOnly: {
           type: Boolean,
